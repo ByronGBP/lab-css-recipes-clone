@@ -1,9 +1,79 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
-  margin: 0;
-}
-/*Import the font and set the default size*/
+
+
 html {
+
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+
+}
+
+
+.HeaderImage {
+
+  max-width: 100%;
+
+}
+
+.HeaderText {
+
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-size: 95px;
+  width: 100%;
+
+}
+
+.HeaderText:before {
+   /*
+   How it works?
+   */
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+   content: '';
+
+}
+
+.Main {
+
+  position: relative;
+  padding: 10% 10% 0% 10%;
+
+}
+
+.MainDescription {
+
+  font-size: 25px;
+
+}
+
+.MainImage, .IngredientsImage {
+
+  display : block;
+  margin: auto;
+  margin-top: 10%;
+
+}
+
+.Ingredients, .Directions {
+
+  position: relative;
+  margin: 10% 10% 0% 10%;
+  border-top: 1%;
+  border-top-style: solid;
+  border-color: grey;
+  font-size: 23px;
+
+}
+
+.IngredientsList:before {
+  content: '- ';
+}
+
+.IngredientsHeader, .DirectionsHeader {
+
+  margin-bottom: 5%;
+  font-size: 25px;
+
 }
